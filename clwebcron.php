@@ -54,7 +54,7 @@ class PlgSystemClwebcron extends CMSPlugin
 		// Cron is valid ?
 		$ctoken = trim($this->app->input->get->get('ctoken', null, 'STRING'));
 		
-		if ( !empty($ctoken) and ($this->app->isSite()))
+		if ( !empty($ctoken) and ($this->app->isClient('site')))
 		{
 			// Check token
 			if ($ctoken != $this->params->get('token', 'webcron'))
