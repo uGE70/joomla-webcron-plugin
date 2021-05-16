@@ -30,13 +30,13 @@ class PlgSystemClwebcron extends CMSPlugin
 	protected $app;
 
 	public function __construct(&$subject, $config)
-    {
-        parent::__construct($subject, $config);
+    	{
+        	parent::__construct($subject, $config);
 
 		if (!$this->app)
 		{
-    		$this->app = Factory::getApplication();
-    	}
+    			$this->app = Factory::getApplication();
+    		}
 
 	}
 
